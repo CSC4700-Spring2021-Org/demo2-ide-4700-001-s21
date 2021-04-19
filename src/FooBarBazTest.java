@@ -23,4 +23,13 @@ class FooBarBazTest {
         assertEquals("bar", fbb.transform(5));
     }
 
+    @Test
+    void testTransformwhenDivBy105() {
+    	assertEquals("foobarbaz", fbb.transform(105));
+    }
+    
+    @Test
+    void testTransformwhenDivBy7() {
+    	assertEquals("baz", fbb.transform(7));
+    }
 }
